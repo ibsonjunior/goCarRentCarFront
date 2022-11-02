@@ -1,0 +1,63 @@
+.card_main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 45vw;
+    height: 43vh;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.card_main img{
+    margin-top: 0.75rem;
+    max-width: 25vw;
+    max-height: 38vh;
+    width: auto;
+    height: auto;
+}
+
+.card_main h3{
+    width: 12vw;
+    overflow-y: hidden;
+}
+
+.card_description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+    position: relative;
+}
+
+.about{
+    background-color: #f25c05;
+    color: white;
+    padding: 6px;
+    width: 10vw;
+    font-size: medium;
+    border: none;
+    position: absolute;
+    bottom: 0px;
+    top: auto;
+}
+
+.car_description{
+    padding: 0.25rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    width: 16vw;
+    height: 25vh;
+    font-size: 15px;
+}
+
+.car_description h6{
+    overflow-y: hidden;
+}
+
+.galeria_carro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}

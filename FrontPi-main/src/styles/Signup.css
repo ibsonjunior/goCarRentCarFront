@@ -1,0 +1,45 @@
+.signup{
+    overflow-y: hidden;
+    height: auto;
+    position: relative;
+    margin-top: 8vh;
+}
+
+.signup_form{
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1{
+    overflow-y: hidden;
+}
+
+.user_name{
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.signup_input_flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    border-radius: 8px;
+    border: 1px solid;
+    padding: 6px;
+}
+
+.create_account{
+    width: 8vw;
+    margin: 1rem;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+}

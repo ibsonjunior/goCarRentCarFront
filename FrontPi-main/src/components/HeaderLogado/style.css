@@ -1,0 +1,39 @@
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user_options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 23vw;
+}
+
+.logout{
+    padding: 8px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.logout a{
+    text-decoration: none;
+    color: white;
+}
+
+.perfil{
+    width: 3.5vw;
+    height: 3.5vw;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: #f06b1e;
+}
+
+.welcome_text{
+    padding-top: 12px;
+}
