@@ -1,6 +1,6 @@
 import { CaretLeft, MapPin } from "phosphor-react";
 import '../HeaderProduct/style.css'
-
+import { Link } from "react-router-dom";
 export default function HeaderProduct() {
   return (
     <>
@@ -12,7 +12,11 @@ export default function HeaderProduct() {
             <h2 className="title_car">Audi A3</h2>
           </div>
         </header>
-        <CaretLeft size={40} className="icon-previus" />
+        <Link to="/">
+          <CaretLeft size={40} className="icon-previus" />
+        </Link>
+       
+       
       </div>
 
       <div className="location">
