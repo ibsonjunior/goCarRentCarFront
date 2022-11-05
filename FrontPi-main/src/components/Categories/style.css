@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     overflow-y: hidden;
+    padding-bottom: 1rem;
 }
 
 .card_category{
@@ -10,7 +11,7 @@
     align-items: center;
     justify-content: center;
     width: 21vw;
-    height: auto;
+    height: 35vh;
     border: 1px solid rgba(223, 228, 234, 1);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -18,7 +19,7 @@
 
 .card_category img{
     max-width: 20vw;
-    max-height: 150px;
+    max-height: 130px;
     width: auto;
     height: auto;
     overflow-y: hidden;

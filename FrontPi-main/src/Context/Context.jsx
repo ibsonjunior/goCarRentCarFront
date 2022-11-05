@@ -1,27 +1,39 @@
-import { createContext,useState, useEffect } from "react";
+import { createContext, useState, useEffect } from "react";
 
 export const Context = createContext({});
 
 const ContextProvider = ({children}) =>{
     const [cars, setCars] = useState([]);
-
+    const [categiriesCars, setCategiriesCars] = useState([]);
   
 
 
+    // Produts
+    const urlProducts = "https://fakestoreapi.com/products?limit=4"
 
-    // const url = "http://52.53.193.244:8081/products"
+    useEffect(() => {
+        fetch(urlProducts)
+            .then(responseCars => responseCars.json())
+            .then(carsJSON => setCars(carsJSON))  
+    }, []);
 
-    // useEffect(() => {
-    //     fetch(url)
-    //         .then(responseWines => responseWines.json())
-    //         .then(WinesJSON => setWines(WinesJSON))  
-    // }, []);
+    //Categories
+
+    const urlCategories = "https://fakestoreapi.com/products/categories"
+
+    useEffect(() => {
+        fetch(urlCategories)
+            .then(responseCategoriesCars => responseCategoriesCars.json())
+            .then(CategoriesCarsJSON => setCategiriesCars(CategoriesCarsJSON))  
+    }, []);
 
     return(
-        <ProductContext.Provider value={{cars, setCars }}>
+        <Context.Provider value={{cars, setCars, categiriesCars, setCategiriesCars }}>
             {children}
-        </ProductContext.Provider>
+        </Context.Provider>
     )
 }
 
 export default ContextProvider;
+
+
