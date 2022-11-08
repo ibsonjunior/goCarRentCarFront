@@ -4,9 +4,6 @@ export const Context = createContext({});
 
 const ContextProvider = ({children}) =>{
     const [cars, setCars] = useState([]);
-    const [categiriesCars, setCategiriesCars] = useState([]);
-  
-
 
     // Produts
     const urlProducts = "https://fakestoreapi.com/products?limit=4"
@@ -14,21 +11,44 @@ const ContextProvider = ({children}) =>{
     useEffect(() => {
         fetch(urlProducts)
             .then(responseCars => responseCars.json())
-            .then(carsJSON => setCars(carsJSON))  
-    }, []);
+            .then(carsJSON => {
+                const newCars = carsJSON.map(car => {
+                  // const imagens = car.images.map(imagem => {
+                  //   return {
+                  //     original: imagem,
+                  //     thumbnail: imagem
+                  //   }
+                  // })
 
-    //Categories
+                  return {
+                    ...car,
+                    images: [
+                      {
+                        original: car.image,
+                        thumbnail: car.image
+                      },
+                      {
+                        original: car.image,
+                        thumbnail: car.image
+                      },
+                      {
+                        original: car.image,
+                        thumbnail: car.image
+                      },
+                      {
+                        original: car.image,
+                        thumbnail: car.image
+                      }
+                    ]
+                  }
+                })
 
-    const urlCategories = "https://fakestoreapi.com/products/categories"
-
-    useEffect(() => {
-        fetch(urlCategories)
-            .then(responseCategoriesCars => responseCategoriesCars.json())
-            .then(CategoriesCarsJSON => setCategiriesCars(CategoriesCarsJSON))  
+                setCars(newCars)
+            })  
     }, []);
 
     return(
-        <Context.Provider value={{cars, setCars, categiriesCars, setCategiriesCars }}>
+        <Context.Provider value={{cars, setCars }}>
             {children}
         </Context.Provider>
     )

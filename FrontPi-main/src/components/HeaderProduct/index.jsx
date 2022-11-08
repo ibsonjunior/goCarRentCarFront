@@ -12,6 +12,7 @@ export default function HeaderProduct({products}) {
             <h2 className="title_car">{products.title}</h2>
           </div>
         </header>
+        
         <Link to="/">
           <CaretLeft size={40} className="icon-previus" />
         </Link>

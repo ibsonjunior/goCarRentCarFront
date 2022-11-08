@@ -24,13 +24,33 @@ body {
    
 }
 
+.div_btn{
+    position: absolute;
+}
+
 .btn_modal{
     height:5vh;
     width:10vw;
+    position: relative;
     border: none;
-    background-color:white;
-
+    background-color:transparent;
+    color: red;
+    margin-top: 45vh;
 }
+
+.slider_slick_mobile{
+    overflow-y: hidden;
+    background-color:white;
+    height: 100vh;
+   
+   
+}
+
+.img10{
+    overflow-y: hidden;
+    width:100vw;
+}
+
 
 .grid_images{
     display: grid;
@@ -65,6 +85,7 @@ body {
     -ms-border-radius:16px;
     -o-border-radius:16px;
 }
+
 
 
 /* #img_car{
