@@ -14,18 +14,31 @@ export default function ModalProduct(props){
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
         centered
-        className="bg-dark-transparent"
+        className="bg-white-transparent"
         data-focus="true"
       >
 
-        <Modal.Body className="boxModal bg-dark bg-gradient-dark text-light">   
+        <Modal.Header
+          id="harmonyModal-header"
+          closeButton
+          className="boxModal bg-white "
+
+        >
+          <Modal.Title id="contained-modal-title-vcenter " className=" text-dark">
+          Audi
+
+          </Modal.Title>
+         
+        </Modal.Header>
+
+
+        <Modal.Body className="boxModal bg-white bg-gradient-white text-light">   
            <ImageGallery autoPlay="true" items={props.products.images} />
+           
 
         </Modal.Body>
 
-        <Modal.Footer className="boxModal bg-dark">
-          <Button onClick={props.onHide}>Close</Button>
-        </Modal.Footer>
+      
 
       </Modal>
         

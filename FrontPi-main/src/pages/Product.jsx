@@ -31,8 +31,9 @@ export default function Product() {
         <Heart size={32} />
       </div>
 
-      { isMobile ==  window.innerWidth >= 768 ? 
-        <SliderMobile  product={selectedProduct} />
+      { 
+        window.innerWidth <= 820 ? 
+        <SliderMobile product={selectedProduct} />
         :
         <GridProduct product={selectedProduct}/>
       }

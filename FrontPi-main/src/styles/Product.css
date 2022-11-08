@@ -7,6 +7,7 @@
 
 body {
     min-height: 100vh;
+    overflow-y: scroll;
 }
 
 .icons_div{
@@ -15,35 +16,9 @@ body {
     gap: 15px;
 }
 
-.images{
-    width: 100vw;
-    height:100vh;
-    display:flex;
-    flex-direction: column;
-    align-items:flex-end;
-   
-}
-
-.div_btn{
-    position: absolute;
-}
-
-.btn_modal{
-    height:5vh;
-    width:10vw;
-    position: relative;
-    border: none;
-    background-color:transparent;
-    color: red;
-    margin-top: 45vh;
-}
 
 .slider_slick_mobile{
     overflow-y: hidden;
-    background-color:white;
-    height: 100vh;
-   
-   
 }
 
 .img10{

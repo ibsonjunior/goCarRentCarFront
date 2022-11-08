@@ -1,7 +1,8 @@
-
+import { ArrowRight } from "phosphor-react";
 import React, { useContext, useState } from "react";
 // import { Link, useParams } from "react-router-dom";
 import ModalProduct from "../ModalProduct";
+import "../GridProduct/style.css"
 
 export default function GridProduct({product}){
 
@@ -27,7 +28,9 @@ export default function GridProduct({product}){
             }}
           >
             Ver mais
+            
           </button>
+          <ArrowRight className="btn_arrow" size={25} />
         </div>
       </div>
         
