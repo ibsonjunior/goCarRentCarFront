@@ -9,11 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tabuckner/material-dayjs-adapter": "^2.0.0",
     "bootstrap": "^5.2.2",
     "formik": "^2.2.9",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
+    "react-date-range": "^1.4.0",
     "react-dom": "^18.2.0",
     "react-image-gallery": "^1.2.11",
     "react-router-dom": "^6.4.2",

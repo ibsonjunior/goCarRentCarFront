@@ -26,7 +26,7 @@ body {
     justify-content: center;
     width: 100vw;
     height: 25vh;
-    background-color: #f06b1e;
+    background-color: #f48240;
     color: white;
 }
 
@@ -111,5 +111,5 @@ body {
 
 .recomendacoes{
     margin-top: 2rem;
-    background-color: rgb(163, 160, 160);
+    background-color: #ababab96;
 }

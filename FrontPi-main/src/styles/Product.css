@@ -6,9 +6,30 @@
 }
 
 body {
-    min-height: 100vh;
+    min-height: 200vh;
     overflow-y: scroll;
 }
+
+.section{
+    min-height: 230vh;
+}
+
+h1, h2, h3, h4, h5{
+    overflow: hidden;
+    margin-left: 1%;
+} 
+
+h1, h2, h3 {
+      
+      margin-left: 3%;
+} 
+  
+p{
+    overflow: hidden;
+    margin-left: 2%;
+    font-size: large;
+} 
+  
 
 .icons_div{
     display: flex;

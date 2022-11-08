@@ -1,0 +1,98 @@
+/* Politicas */
+.politicas{
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* overflow: hidden;  
+    display: flex;
+    justify-content: center;  */
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 10%;
+}
+
+.regra{
+    width: 70vh;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  
+}
+
+.regra h4{
+    min-width: 188px;
+}
+
+/* ___________________________ R E S P O N S I V I D A D E___________________________*/
+
+@media  (max-width:767px){
+
+    .regras{
+        width: 100vw;
+        margin-top: 8%;
+        height: 90vh;
+        margin-right: 50px;
+    }
+
+    .politicas{
+        width: auto;
+        grid-template-columns: 1fr;
+        height: 70vh;
+        
+    }
+    .regra h4{
+        width: 0%;
+        text-align: left;
+        font-size: medium;
+        min-width: 100px;
+        
+    }
+    .regra p{
+        max-width: 42%;
+        width: 50%;
+        font-size: smaller;
+    }
+    
+
+}
+
+@media  (min-width:768px) and (max-width:1023px){
+
+    .regras{
+     margin-bottom: 10%;
+    }
+    .politicas{
+        width: auto;
+        grid-template-columns: 1fr;
+        height: 60vh;
+        margin-bottom: 10%;
+        
+    }
+    .regra h4{
+        width: 30%;
+        text-align: left;
+        min-width: 100px;
+        
+    }
+    .regra p{
+        max-width: 70%;
+        width: 50%;
+    }
+
+}
+
+
+
+
+
+
+
+/* @media  (max-width:767px){
+
+}
+
+@media  (min-width:768px) and (max-width:1024px){
+
+} */

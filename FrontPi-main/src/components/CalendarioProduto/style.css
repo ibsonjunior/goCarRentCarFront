@@ -1,0 +1,149 @@
+/* Calendário */
+
+.calendar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    padding: 2%;
+    background-color: #ff5e005d;
+}
+
+.dateRange{
+    height: auto;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    gap: 3%;
+}
+
+/* simulação de preços */
+.align{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.s-text{
+color: #8d3b0b;
+height:14vh;
+width:100%;
+}
+
+.s-text h4{
+    margin: 5%; 
+}
+
+.simulation{
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    height:15vh;
+    width:100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+
+.reserva-btn{
+    border: none;
+    height: 5vh;
+    width: 25vh;
+    border-radius: 5px;
+    background-color: #ff9050;
+}
+
+.reserva-btn:hover{
+    color: ivory;
+    background-color: #dc7b43;
+    
+}
+
+.result{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #f06b1e;
+}
+
+.rdrMonthsVertical{
+    flex-direction: row;
+}
+
+span{
+    overflow: hidden;
+  }
+  /* mudança */
+.rdrDayNumber span{
+      color: #1d2429;
+      overflow: hidden; 
+}
+
+@media  (max-width:767px){
+
+    .calendar{
+        align-items: center;
+        margin-top: 5%;
+        
+    }
+
+    .DatasTitulo{
+        width: 100%;
+        text-align: center;
+    } 
+
+    .s-text h4{
+        margin: 5%; 
+        text-align: center;
+    }
+
+    .dateRange{
+        flex-direction: column;
+    }
+    .simulation{
+        height:20vh ;
+        margin-bottom: 4%;
+    }
+
+}
+
+/* ___________________________ R E S P O N S I V I D A D E___________________________*/
+
+@media  (min-width:768px) and (max-width:1024px){
+ 
+    .dateRange{
+    width: 100%;   
+    }
+    
+    .align{
+        width: 50%;
+    }
+
+    .s-text{
+        height: auto;
+    }
+
+    .reserva-btn{
+        width: 20vw;
+        height: 4vh;
+    }
+
+    .simulation h4{
+        text-align: center;
+        font-size: 130%;
+    }
+ 
+
+
+}
