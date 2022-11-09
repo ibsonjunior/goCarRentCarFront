@@ -78,8 +78,12 @@ width:100%;
 }
 
 .rdrMonthsVertical{
-    flex-direction: row;
+    flex-direction:row;
 }
+
+/* .rdrCalendarWrapper .rdrDateRangeWrapper{
+    flex-direction: row;
+} */
 
 span{
     overflow: hidden;

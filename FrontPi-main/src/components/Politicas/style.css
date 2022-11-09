@@ -1,6 +1,6 @@
 /* Politicas */
 .politicas{
-    height: 30vh;
+    height: 50vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* overflow: hidden;  
@@ -12,7 +12,7 @@
 }
 
 .regra{
-    width: 70vh;
+    width: 80vh;
     height: auto;
     overflow: hidden;
     display: flex;
@@ -37,7 +37,7 @@
     }
 
     .politicas{
-        width: auto;
+        width: 90vw;
         grid-template-columns: 1fr;
         height: 70vh;
         
@@ -64,7 +64,7 @@
      margin-bottom: 10%;
     }
     .politicas{
-        width: auto;
+        width: 98vw;
         grid-template-columns: 1fr;
         height: 60vh;
         margin-bottom: 10%;
@@ -77,8 +77,8 @@
         
     }
     .regra p{
-        max-width: 70%;
-        width: 50%;
+        max-width: 90%;
+        width: 60%;
     }
 
 }

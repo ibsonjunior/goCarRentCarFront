@@ -57,6 +57,7 @@ export default function CalendarioProduto(){
                             minDate={addDays(new Date(), 0)}
                             maxDate={addDays(new Date(), 180)}
                             scroll={{calendarHeight: 100}}
+                            direction="horizontal"
                             />
                         <div className='align'>
                             <div className='s-text'>
