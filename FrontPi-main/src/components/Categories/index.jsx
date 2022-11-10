@@ -11,10 +11,10 @@ function Categories() {
                 {
                 cars?.map((categories) => (
                     <div key={categories.id} className="card_category">
-                        <div className="category_img"> <img src={categories.image} alt="" /></div>
+                        <div className="category_img"> <img src={categories.urlImage} alt="" /></div>
                         <div className="category_info"> 
-                        <h2>{categories.title} </h2>
-                        <p> <strong>{categories.description}</strong> Unidades</p>
+                        <h2>{categories.qualification} </h2>
+                        <p> <strong>{categories.products.length}</strong> Unidades</p>
                         </div>
                     </div>
                 ))

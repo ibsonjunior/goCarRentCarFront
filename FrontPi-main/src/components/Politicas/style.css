@@ -11,6 +11,7 @@
     margin-bottom: 10%;
 }
 
+
 .regra{
     width: 80vh;
     height: auto;
@@ -23,6 +24,11 @@
 
 .regra h4{
     min-width: 188px;
+
+}
+
+.regras h1{
+    text-align: center;
 }
 
 /* ___________________________ R E S P O N S I V I D A D E___________________________*/
@@ -35,6 +41,10 @@
         height: 90vh;
         margin-right: 50px;
     }
+/* 
+    .regra{
+        height: 50vh;
+    } */
 
     .politicas{
         width: 90vw;
@@ -49,16 +59,22 @@
         min-width: 100px;
         
     }
-    .regra p{
-        max-width: 42%;
-        width: 50%;
+    .description_police{
+        width:70vw;
+        /* padding:1rem; */
+    }
+
+    .description_police  p{
+        max-width: 57vw;
+        /* width: 100%; */
         font-size: smaller;
+        margin:0;
     }
     
 
 }
 
-@media  (min-width:768px) and (max-width:1023px){
+@media  (min-width:768px) and (max-width:1281px){
 
     .regras{
      margin-bottom: 10%;
@@ -70,15 +86,29 @@
         margin-bottom: 10%;
         
     }
+
+    .regra{
+        width: 90vw;
+        justify-content:space-between;
+    }
     .regra h4{
         width: 30%;
         text-align: left;
         min-width: 100px;
         
     }
-    .regra p{
-        max-width: 90%;
-        width: 60%;
+
+    .description_police{
+        width:70vw;
+        /* padding:1rem; */
+    }
+
+
+    .description_police  p{
+        max-width: 57vw;
+        /* width: 100%; */
+        font-size: 20px;
+        margin:0;
     }
 
 }
@@ -87,12 +117,3 @@
 
 
 
-
-
-/* @media  (max-width:767px){
-
-}
-
-@media  (min-width:768px) and (max-width:1024px){
-
-} */

@@ -6,31 +6,21 @@
 }
 
 body {
-    min-height: 200vh;
+    /* min-height: 200vh; */
 }
 
 .section{
-    min-height: 230vh;
+    /* min-height: 230vh; */
     overflow: hidden;
 }
 
 
 h1, h2, h3, h4, h5{
     overflow: hidden;
-    margin-left: 1%;
+    /* margin-left: 1%; */
 } 
 
-h1, h2, h3 {
-      
-      margin-left: 3%;
-} 
-  
-p{
-    overflow: hidden;
-    margin-left: 2%;
-    font-size: large;
-} 
-  
+
 
 .icons_div{
     display: flex;
@@ -43,48 +33,3 @@ p{
     overflow-y: hidden;
 }
 
-.img10{
-    overflow-y: hidden;
-    width:100vw;
-}
-
-
-.grid_images{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    margin:0 2vw 0 2vw ;
-}
-
-.grid_images .img1{
-    grid-row-start: 1;
-    grid-row-end: 3;
-
-}
-
-.img1{
-    width: 658px;
-    height: 326px;
-    border-radius:16px ;
-    -webkit-border-radius:16px ;
-    -moz-border-radius:16px ;
-    -ms-border-radius:16px ;
-    -o-border-radius:16px ;
-}
-
-.img2, .img3, .img4, .img5{
-    width: 320px;
-    height: 158px;
-    border-radius:16px;
-    -webkit-border-radius:16px;
-    -moz-border-radius:16px;
-    -ms-border-radius:16px;
-    -o-border-radius:16px;
-}
-
-
-
-/* #img_car{
-
-} */

@@ -2,11 +2,20 @@ hr.solid {
     border-top: 3px solid #f06b1e;
 }
 
+.iconCar{
+    width: 32px;
+}
+
 .container{
-    height: 20vh;
+    height: 38vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;
+}
+
+.container h4{
+    margin-left: 10px;
+    margin-top: 8px;
 }
 
 .item{
@@ -17,6 +26,21 @@ hr.solid {
     justify-content: first baseline;
 }
 
+.descricao h1{
+    text-align: center;
+}
+
+
+
+.descriptionCar {
+    width:100vw;
+    padding-left: 3vw;
+}
+
+.caracteristicas h1{
+    text-align: center;
+}
+
  @media  (max-width:767px){
     .caracteristicas{
         margin-top: 3%;
@@ -25,7 +49,7 @@ hr.solid {
 
     .container{
         grid-template-columns: 1fr;
-        height: 40vh;
+        height: 65vh;
         margin-left: 5%;
     }
 

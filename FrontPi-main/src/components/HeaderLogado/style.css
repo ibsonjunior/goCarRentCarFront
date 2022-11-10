@@ -1,9 +1,9 @@
 
-
 .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 .user_options{
@@ -36,4 +36,30 @@
 
 .welcome_text{
     padding-top: 12px;
+}
+
+
+@media  (max-width:767px){
+
+    .user_autenticado{
+        width: 60vw;
+    }
+    .user_options{
+        width: 60vw;
+        /* height:20vh; */
+    }
+
+    .welcome_text p{ 
+        text-overflow: ellipsis; 
+        display: -webkit-box;
+        -webkit-line-clamp: 2; 
+        -webkit-box-orient: vertical; 
+        overflow-y: hidden;
+
+    }
+
+    .perfil{
+        display: none;
+    }
+
 }

@@ -13,14 +13,14 @@ import Politicas from "../components/Politicas";
 export default function Product() {
 
   //Informações que vem da API
-  const { cars } = useContext(Context);
-  // Id do Produto
+  const { carsProducts, carsImage } = useContext(Context);
+  // Id do Produto/Parâmetro
   const { id } = useParams();
   //Mudança de estado de acordo com o tamanho da tela
   const [isMobile, setIsMobile] = useState(false);
-
+  //Mudança de estado de acordo com o tamanho da tela
   useEffect(() => {
-    const media = window.matchMedia('(min-width: 820px)');
+    const media = window.matchMedia('(min-width: 1025px)');
     const listener = () => setIsMobile(media.matches);
     listener();
     window.addEventListener('resize', listener);
@@ -29,8 +29,20 @@ export default function Product() {
   }, [isMobile]);
 
   // Filtro a partir do click
-  const selectedProduct = cars?.find((product) => product.id == id);
+  const selectedProduct = carsProducts?.find((product) => product.id == id);
 
+
+  const imagesProduct = carsImage?.filter((images) => {
+    const name = selectedProduct.name.split(" ");
+    return images.title.includes(name[0])
+  })
+  // const imagesProduct = carsImage?.find((images) => images.title == selectedProduct.name)
+
+  console.log(imagesProduct)
+
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
 
   return (
     <>
@@ -44,12 +56,12 @@ export default function Product() {
 
         { 
           isMobile ? 
-          <GridProduct product={selectedProduct}/>
+          <GridProduct  product={imagesProduct}/>
           :
-          <SliderMobile product={selectedProduct} />
+          <SliderMobile product={imagesProduct} />
         }
 
-      <Caracteristicas/>
+      <Caracteristicas product={selectedProduct}/>
 
       <CalendarioProduto />
 
@@ -57,5 +69,6 @@ export default function Product() {
       
       </section>   
     </>
+
   );
 }

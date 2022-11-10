@@ -1,6 +1,6 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from '../../assets/logo_gocar.png'
-
+import { SignOut } from "phosphor-react";
 import { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 
@@ -42,7 +42,7 @@ function HeaderLogado({ nomeUsuario }) {
                         <div className="user_options">
 
                         <div className="welcome_text"><p>Olá, {nomeUsuario} </p></div>
-                        <button className="logout" onClick={() => {logout()}}> <a href="/">Logout</a> </button>
+                        <button className="logout" onClick={() => {logout()}}> <a href="/"><SignOut size={25} /></a> </button>
                         <button className="perfil">{nomeUsuario.substr(0, 1)}</button>
                         
                         </div>

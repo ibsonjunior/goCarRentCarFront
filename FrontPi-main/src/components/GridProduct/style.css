@@ -4,14 +4,52 @@
     margin: 0;
 }
 
-
 .images{
-    width: 100vw;
+    width: 90vw;
     height:auto;
     display:flex;
     flex-direction: column;
     align-items:flex-end;
 }
+
+.grid_images{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    margin:0 2vw 0 2vw ;
+    padding-left: 5rem;
+}
+
+.grid_images .img0{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+.img0{
+    max-width:35vw;
+    max-height:55vh;
+    width:100%;
+    height: 100%;
+    border-radius:16px ;
+    -webkit-border-radius:16px ;
+    -moz-border-radius:16px ;
+    -ms-border-radius:16px ;
+    -o-border-radius:16px ;
+}
+
+.img1, .img2, .img3, .img4{
+    width: 320px;
+    height: 158px;
+    border-radius:16px;
+    -webkit-border-radius:16px;
+    -moz-border-radius:16px;
+    -ms-border-radius:16px;
+    -o-border-radius:16px;
+}
+
+
 
 .btn_modal{
     height:5vh;

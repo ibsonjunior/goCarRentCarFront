@@ -38,6 +38,11 @@ body {
     width: 30vw;
     border-radius: 8px;
     padding: 8px;
+    overflow-x: hidden;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 
 .btn_login{
@@ -48,4 +53,14 @@ body {
     color: white;
     border: none;
     padding: 10px;
+    overflow-x: hidden;
+}
+
+
+@media(max-width: 480px){
+    .btn_login{
+        width: 30vw;
+        padding: 6px;
+        overflow-x: hidden;
+    }
 }

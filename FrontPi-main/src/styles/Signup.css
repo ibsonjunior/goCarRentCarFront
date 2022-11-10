@@ -43,3 +43,39 @@ input{
     border: none;
     padding: 10px;
 }
+
+
+
+@media(max-width: 768px){
+    .user_name{
+        display: block;
+    }
+
+    .signup{
+        margin-top: 0;
+    }
+
+    input{
+        padding: 3px;
+    }
+
+    .create_account{
+        width: 15vw;
+        padding: 6px;
+    }
+}
+
+@media(max-width: 480px){
+
+    .signup{
+        margin-top: 10vh;
+    }
+
+    .user_name{
+        width: 100vw;
+    }
+
+    .create_account{
+        width: 25vw;
+    }
+}

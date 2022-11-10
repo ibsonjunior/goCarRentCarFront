@@ -10,7 +10,9 @@ body {
 }
 
 .product{
-    background-color: #f48240;
+    /* background-color: #f48240; */
+    /* background-color: #ff5e005d; */
+    background-color:#f48240;
     width: 100%;
     height:10vh;
     display: flex;

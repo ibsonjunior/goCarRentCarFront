@@ -8,16 +8,30 @@
 html{
     scroll-behavior: smooth;
     position: relative;
+    overflow-x: hidden;
 }
 
-body {
-    min-height: 100vh;
+h1, h2, h3, h4, h5, h6{
+    overflow-y: hidden;
 }
 
 .body{
     width: 100vw;
     text-align: center;
+    overflow-x: hidden;
 }
+
+/* Navbar */
+.navbar, .navbar-expand-lg, .navbar-light{
+    padding: 0;
+    padding-top: 2vh;
+    overflow-x: hidden;
+
+}
+
+
+
+
 
 .second_header{
     display: flex;
@@ -26,12 +40,8 @@ body {
     justify-content: center;
     width: 100vw;
     height: 25vh;
-    background-color: #f48240;
+    background-color: #f06b1e;
     color: white;
-}
-
-.second_header h2{
-    overflow-y: hidden;
 }
 
 .second_header input{
@@ -64,13 +74,12 @@ body {
     padding: 8px;
 }
 
-
+/*Bloco de categorias*/
 .categories{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    height: 45vh;
 }
 
 .categories_title{
@@ -80,14 +89,11 @@ body {
 }
 
 .categories_cards{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     width: 100vw;
-    height: 40vh;
     background-color: white;
 }
 
+/*Bloco de produtos*/
 .card_home{    
     width: 21vw;
     height: 37vh;
@@ -97,7 +103,6 @@ body {
 }
 
 .recomendations_title{
-    margin: 0.7rem;
     text-align: center;
     overflow-y: hidden;
 }
@@ -107,9 +112,269 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 8rem;
+    overflow-x: hidden;
 }
 
 .recomendacoes{
     margin-top: 2rem;
-    background-color: #ababab96;
+    background-color: rgb(163, 160, 160);
+    overflow-x: hidden;
+}
+
+
+
+/*Card dos produtos*/
+.galeria_carro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.card_main{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 45vw;
+    height: 43vh;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.card_main img{
+    margin-top: 0.75rem;
+    max-width: 25vw;
+    max-height: 38vh;
+    width: auto;
+    height: auto;
+}
+
+.card_title{
+   height: auto;
+   width: fit-content;
+   overflow-y: hidden;
+}
+
+.card_description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: small;
+    position: relative;
+    overflow: hidden; 
+}
+
+.car_description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.car_description{
+    /* padding: 0.25rem; */
+    /* margin-top: 0.5rem; */
+    /* margin-left: 1rem; */
+    width: 100%;
+    height: 28vh;
+    font-size: 16px;
+}
+
+.car_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.link_button{
+    width: fit-content;
+    height: fit-content;
+}
+
+.button_car{
+    width: fit-content;
+    height: fit-content;
+    background-color: #f25c05;
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+}
+
+.car_description p{
+    width: 100%;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical; 
+    overflow-y: hidden;
+}
+
+@media(max-width: 768px){
+    .recomendacoes{
+        overflow-x: hidden;
+    }
+
+    .btnCadastro{
+        width:30vw;
+    }
+
+    .categories_cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        padding: 16px;
+        gap: 20px;
+        overflow-x: hidden;
+    }
+
+    .card_category{
+        width: 45vw;
+        overflow-x: hidden;
+    }
+
+    .card_category img{
+        max-width: 100vw;
+        max-height: 20vh;
+        width: auto;
+        height: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .car_description{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .car_description p{
+        max-width: 32ch;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .galeria_carro{
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    
+    .card_main{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 85vw;
+        height: 35vh;
+        overflow-x: hidden;
+    }
+
+    .card_image{
+        overflow-y: hidden;
+    }
+
+    .card_image img{
+        max-width: 55vw;
+        max-height: 30vh;
+        width: auto;
+        height: auto;
+    }
+
+}
+
+@media(max-width: 480px){
+
+    .second_header{
+        height: 45vh;
+        overflow-x: hidden;
+    }
+
+    .options{
+        display: block;
+        overflow-x: hidden;
+    }
+
+    .second_header input{
+        width: 80vw;
+        overflow-x: hidden;
+    }
+
+    
+    .btn_header{
+        width: 20vw;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .categories_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+    }
+    
+    .card_category{
+        width: 80vw;
+        height: fit-content;
+        overflow-x: hidden;
+    }
+
+    .card_category img{
+        max-width: 100vw;
+        max-height: 20vh;
+        width: auto;
+        height: auto;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .car_description{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }   
+
+    .galeria_carro{
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    
+    .card_main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+        height: 55vh;
+        overflow-x: hidden;
+    }
+
+    .card_image{
+        overflow-y: hidden;
+    }
+
+    .card_image img{
+        max-width: 55vw;
+        max-height: 30vh;
+        width: auto;
+        height: auto;
+    }
+
+    /* .about{
+        width: 20vw;
+    } */
+    
 }
